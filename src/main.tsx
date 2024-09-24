@@ -16,7 +16,7 @@ import Index from './routes/index.tsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio2/",
     element: <Root />,
     errorElement: <ErrorPage />,
     loader: rootLoader,
@@ -27,19 +27,19 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <Index /> },
           {
-            path: "contacts/:contactId",
+            path: "/portfolio2/contacts/:contactId",
             element: <Contact />,
             loader: contactLoader,
             action: contactAction,
           },
           {
-            path: "contacts/:contactId/edit",
+            path: "/portfolio2/contacts/:contactId/edit",
             element: <EditContact />,
             loader: contactLoader,
             action: editAction,
           },
           {
-            path: "contacts/:contactId/destroy",
+            path: "/portfolio2/contacts/:contactId/destroy",
             action: destroyAction,
             errorElement: <div>Oops! There was an error.</div>,
           },
