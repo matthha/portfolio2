@@ -6,7 +6,7 @@ export async function action({ request, params }) {
    const formData = await request.formData();
    const updates = Object.fromEntries(formData);
    await updateContact(params.contactId, updates);
-   return redirect(`/contacts/${params.contactId}`);
+   return redirect(`portfolio2/contacts/${params.contactId}`);
  }
 
 export default function EditContact() {
@@ -62,7 +62,7 @@ export default function EditContact() {
       <p>
         <button type="submit">Save</button>
         <button type="button" onClick={() => {
-            navigate(-1);
+            navigate('portfolio2/');
           }}>Cancel</button>
       </p>
     </Form>

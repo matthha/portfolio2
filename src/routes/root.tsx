@@ -11,7 +11,7 @@ export async function loader({ request }) {
 }
 export async function action() {
   const contact = await createContact();
-  return redirect(`/contacts/${contact.id}/edit`);
+  return redirect(`/portfolio2/contacts/${contact.id}/edit`);
 }
 
 export default function Root() {
@@ -58,7 +58,7 @@ export default function Root() {
               {contacts.map((contact) => (
                 <li key={contact.id}>
                   <NavLink
-                    to={`contacts/${contact.id}`}
+                    to={`/portfolio2/contacts/${contact.id}`}
                     className={({ isActive, isPending }) =>
                       isActive
                         ? "active"
@@ -67,7 +67,7 @@ export default function Root() {
                         : ""
                     }
                   >
-                  <Link to={`contacts/${contact.id}`}>
+                  <Link to={`/portfolio2/contacts/${contact.id}`}>
                     {contact.first || contact.last ? (
                       <>
                         {contact.first} {contact.last}
