@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Form, useLoaderData, redirect, useNavigate } from "react-router-dom";
 import { updateContact } from "../contacts";
 

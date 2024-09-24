@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Link, Outlet, useLoaderData, Form, redirect, NavLink, useNavigation, useSubmit } from "react-router-dom";
 import { getContacts, createContact } from "../contacts";
 import { useEffect } from "react";

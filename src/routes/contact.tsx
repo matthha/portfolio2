@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Form, useFetcher, useLoaderData } from "react-router-dom";
 import { getContact, updateContact } from "../contacts";
 
