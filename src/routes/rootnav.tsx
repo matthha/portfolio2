@@ -5,44 +5,39 @@ import { Link, Outlet, useLoaderData, Form, redirect, NavLink, useNavigation, us
 
 export default function RootNav() {
    const navigation = useNavigation();
+   const links = [['About','/'],['CCHS','/cchs']]
    return (
      <>
        <div id="sidebar">
-         <h1>Root Nav</h1>
-         <h2>Pages</h2>
+         <h2>Portfolio</h2>
+         <h1>Matthew Hall</h1>
          <nav>
-         <NavLink
-            to={`/cchs`}
-            className={({ isActive, isPending }) =>
-               isActive
-               ? "active"
-               : isPending
-               ? "pending"
-               : ""
-            }
-         >
-            <Link to={`/cchs`}>
-               CCHS
-            </Link>
-         </NavLink>
-         <NavLink
-            to={`/`}
-            className={({ isActive, isPending }) =>
-               isActive
-               ? "active"
-               : isPending
-               ? "pending"
-               : ""
-            }
-         >
-            <Link to={`/`}>
-               About
-            </Link>
-         </NavLink>
+            <ul>
+            {links.map((link, index) => (
+                <li key={index}>
+                  <NavLink
+                    to={link[1]}
+                    className={({ isActive, isPending }) =>
+                      isActive
+                        ? "active"
+                        : isPending
+                        ? "pending"
+                        : ""
+                    }
+                  >
+                  <Link to={link[1]}>
+                    {link[0]}
+                  </Link>
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
          </nav>
          
-       </div>
-       <Outlet/>
+         </div>
+         <div className="outlet">
+            <Outlet/> 
+         </div>
      </>
    );
  }
