@@ -73,7 +73,7 @@ const router = createBrowserRouter([
     ]
   },
 
-]);
+], {basename:'/portfolio2'});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
