@@ -17,6 +17,9 @@ import Index from './routes/index.tsx';
 import CCHS from './routes/cchs.js';
 import RootNav from './routes/rootnav.tsx';
 import About from './routes/about.js';
+import Mirror from './routes/mirror.js';
+import League from './routes/league.js';
+import Digi from './routes/digi.js';
 
 // const router1 = createHashRouter([
 //   {
@@ -68,12 +71,24 @@ const router = createBrowserRouter([
             path: "/cchs",
             element: <CCHS />,
           },
+          {
+            path: "/mirror",
+            element: <Mirror />,
+          },
+          {
+            path: "/league",
+            element: <League />,
+          },
+          {
+            path: "/digi",
+            element: <Digi />,
+          },
         ]
     }
     ]
   },
 
-], {basename:'/portfolio2'});
+], {basename:'/portfolio2/'});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
