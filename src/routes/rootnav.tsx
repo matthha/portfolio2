@@ -10,7 +10,7 @@ export default function RootNav() {
       <>
          <div id="sidebar">
             {/* @here */}
-            <h2>Portfolio</h2>
+            <h2><i>Portfolio</i></h2>
             <h1>Matthew Hall</h1>
             <nav>
                <ul>
