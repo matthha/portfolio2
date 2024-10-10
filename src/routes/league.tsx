@@ -3,7 +3,7 @@ export default function League() {
    return (
    <div className="element-content">
       <h1>League Teams</h1>
-      <h2>Team Management App for Coaches</h2>
+      <h2>Case Study: Team Management App for Coaches</h2>
       <h3>Goal:</h3>
       <p>Develop an application that is easy to use on mobile devices to add and edit players and teams.</p>
       <h3>Problem:</h3>

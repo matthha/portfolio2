@@ -2,8 +2,8 @@ export default function CCHS() {
 
    return (
       <div className="element-content tile1">
-         <h1>CCHS - Case Study</h1>
-         <h2>Dynamic Course Content Management App for City Charter High School</h2>
+         <h1>CCHS</h1>
+         <h2>Case Study: Dynamic Course Content Management App for City Charter High School</h2>
          <h3>Goal:</h3>
          <p>Develop an application for City Charter High School that allows administrators to easily update course content as it changes, ensuring that students and parents have access to the latest information.</p>
          <h3>Problem:</h3>
