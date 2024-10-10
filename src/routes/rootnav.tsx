@@ -12,7 +12,7 @@ export default function RootNav() {
             {/* @here */}
             <h2><i>Portfolio</i></h2>
             <h1>Matthew Hall</h1>
-            <nav>
+            <nav className="nav">
                <ul>
                   {links.map((link, index) => (
                      <li key={index}>

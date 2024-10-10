@@ -127,6 +127,9 @@ button:hover {
    background-color: rgba(247, 247, 247, 0.7);
    border-bottom: solid 1px #e3e3e3;
    backdrop-filter: blur(15px);
+   align-items: center;
+   /* justify-content: space-between; */
+   gap:4px;
 }
 
 #sidebar>h1 {
@@ -220,6 +223,9 @@ ul {
 @media only screen and (min-width: 800px) {
    body {
       font-family:"Oswald",'Segoe UI','Fira Sans', Arial, Tahoma, sans-serif;
+   }
+   .nav {
+      align-content:flex-start;
    }
    .outlet{
       justify-content: center;
@@ -527,7 +533,7 @@ ul {
    }
 
    #sidebar {
-      background-color: #464646;
+      background-color: rgba(70, 70, 70,85%);
       color: rgb(190, 190, 190);
    }
    .btn {
