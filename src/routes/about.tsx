@@ -8,7 +8,7 @@ import vball from "../images/VBallInfo.png"
 export default function About() {
 
    return (
-      <div>
+      <div className='element-content tile1'>
          <div className='element-content tile1'>
             <h2 id='aboutMe'>About Me</h2>
             <p style={{ maxWidth: '600px', alignSelf: 'center', display: 'inline-block' }}>Welcome! I'm a web developer that likes to focus on interaction design. I enjoy working on teams and have led a few myself. I've learned the best way to make a good product is to talk to your users and empathize with them throughout the design and development process.</p>

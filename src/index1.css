@@ -10,15 +10,19 @@ html {
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 700 */
 
-body {
-  /* font-family: "Oswald", sans-serif; */
-  font-optical-sizing: auto;
-  font-weight: 250;
-  font-style: normal;
-  letter-spacing: 0.4px;
+@media (hover: hover) {
+   nav a:hover {
+       background-color: #e3e3e3;
+   }
 }
+
 body {
-   font-family:'Segoe UI','Fira Sans', Arial, Tahoma, sans-serif;
+   font-family:"Oswald", 'Segoe UI','Fira Sans', Arial, Tahoma, sans-serif;
+   font-size: larger;
+   font-optical-sizing: auto;
+   font-weight: 250;
+   font-style: normal;
+   letter-spacing: 0.4px;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
@@ -27,13 +31,34 @@ body {
    display: flex;
    padding: 5px;
    height: 100%;
-   width: 100vw;
+   width: 100%;
    overflow: auto;
    /* overflow-x: hidden; */
+}
+.element-content{
+   display: flex;
+   flex-direction: column;
+   max-width: 800px;
+   align-items: center;
 }
 .element-content > img {
    max-width: 100%;
 }
+.element-content a {
+   color:hsl(224, 98%, 58%);
+   text-decoration: none;
+   border: 1px solid blue;
+   border-radius: 5px;
+   padding:3px;
+}
+.element-content a:visited {
+   color: hsl(224, 98%, 58%)
+}
+.element-content a:hover {
+   background-color: hsl(224, 98%, 58%);
+   color:white;
+}
+
 code {
    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
@@ -72,10 +97,10 @@ button:hover {
    box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
 }
 
-button:active {
+/* button:active {
    box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
    transform: translateY(1px);
-}
+} */
 
 #sidebar {
    display: flex;
@@ -122,17 +147,17 @@ nav>ul {
    color: #eeb004;
 }
 
-#sidebar nav a.active span {
+/* #sidebar nav a.active span {
    color: inherit;
-}
+} */
 
 i {
    color: #818181;
 }
 
-#sidebar nav .active i {
+/* #sidebar nav .active i {
    color: inherit;
-}
+} */
 
 #sidebar li {
    margin: 0.25rem 0;
@@ -153,9 +178,9 @@ i {
    gap: 1rem;
 }
 
-#sidebar nav a:hover {
+/* #sidebar nav a:hover {
    background: #e3e3e3;
-}
+} */
 
 #sidebar nav a.active {
    background: hsl(224, 98%, 58%);

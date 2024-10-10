@@ -1,7 +1,7 @@
 export default function CCHS() {
 
    return (
-      <div>
+      <div className="element-content tile1">
          <h1>CCHS - Case Study</h1>
          <h2>Dynamic Course Content Management App for City Charter High School</h2>
          <h3>Goal:</h3>
