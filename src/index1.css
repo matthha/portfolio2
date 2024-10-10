@@ -48,8 +48,17 @@ body {
    align-self: flex-start;
    border-top: 1px solid gray;
 }
+.element-content h2 {
+   width: 100%;
+   margin-bottom: 0px;
+   align-self: flex-start;
+   /* border-top: 1px solid gray; */
+}
 .element-content > img {
    max-width: 100%;
+}
+.element-content * {
+   width: 100%;
 }
 .element-content a {
    color:hsl(224, 98%, 58%);
@@ -120,7 +129,7 @@ button:hover {
    backdrop-filter: blur(15px);
 }
 
-#sidebar>h1,h2 {
+#sidebar>h1 {
    align-self: center;
    /* width: 50%; */
    padding:5px;
