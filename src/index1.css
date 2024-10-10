@@ -521,7 +521,7 @@ ul {
 }
 @media (prefers-color-scheme: dark) {
    html {
-     background: rgb(102, 102, 102);
+     background: rgb(185, 185, 185);
      color: rgb(150, 145, 140);
      /* outline: 5px dashed #000; */
    }
