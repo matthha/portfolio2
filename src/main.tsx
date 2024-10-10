@@ -57,7 +57,7 @@ import Digi from './routes/digi.js';
 
 // ]);
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <RootNav />,
@@ -87,8 +87,7 @@ const router = createBrowserRouter([
     }
     ]
   },
-
-], {basename:'/portfolio2/'});
+]);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

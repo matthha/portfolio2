@@ -1,7 +1,7 @@
 export default function Mirror() {
 
    return (
-   <div>
+   <div className="element-content">
       <h1>Mirror Match</h1>
       <h2>Case Study: IoT System for Enhancing Morning Routines</h2>
       <h3>Goal:</h3>

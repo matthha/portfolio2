@@ -1,7 +1,7 @@
 export default function Digi() {
 
    return (
-   <div>
+   <div className="element-content">
       <h1>DigiArcade</h1>
       <h2>Cross-Platform Mobile Gaming App</h2>
       <h3>Goal:</h3>
