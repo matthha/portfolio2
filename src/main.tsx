@@ -16,7 +16,7 @@ import { action as destroyAction } from "./routes/destroy";
 import Index from './routes/index.tsx';
 import CCHS from './routes/cchs.js';
 import RootNav from './routes/rootnav.tsx';
-import About from './routes/about.js';
+import Home from './routes/home.js';
 import Mirror from './routes/mirror.js';
 import League from './routes/league.js';
 import Digi from './routes/digi.js';
@@ -66,7 +66,7 @@ const router = createHashRouter([
       {
         errorElement: <ErrorPage />,
         children: [
-          { index: true, element: <About /> },
+          { index: true, element: <Home /> },
           {
             path: "/cchs",
             element: <CCHS />,

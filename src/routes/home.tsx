@@ -5,7 +5,7 @@ import vball from "../images/VBallInfo.png"
 
 
 
-export default function About() {
+export default function Home() {
 
    return (
       <div className='element-content tile1'>
@@ -18,7 +18,7 @@ export default function About() {
             <h2>Mirror Match</h2>
             <p>A design prototype for people who want a little more help getting ready.</p>
             {/* <Button href='https://matthha.github.io/gov-property-taxes/' target='blank'>Site</Button> */}
-            <div><a type="button" className="btn btn-outline-primary btn-sm" href='https://verdant-cell-8ec.notion.site/Mirror-Match-70a30d36bb254905935f71cfe1b112ac' target='blank'>Article</a></div>
+            <div><a type="button" className="btn" href='https://verdant-cell-8ec.notion.site/Mirror-Match-70a30d36bb254905935f71cfe1b112ac' target='blank'>Article</a></div>
             <img src={mirror} alt="..." width="800" height="auto" />
          </div>
 

@@ -5,7 +5,7 @@ import { Link, Outlet, useLoaderData, Form, redirect, NavLink, useNavigation, us
 
 export default function RootNav() {
    const navigation = useNavigation();
-   const links = [['About', '/'], ['Mirror','/mirror'],['CCHS', '/cchs'],['Digi','/digi'],['League','/league']]
+   const links = [['Home', '/'],['Mirror','/mirror'],['CCHS', '/cchs'],['Digi','/digi'],['League','/league']]
    return (
       <>
          <div id="sidebar">

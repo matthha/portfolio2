@@ -60,17 +60,17 @@ body {
 .element-content * {
    width: 100%;
 }
-.element-content a {
+.btn {
    color:hsl(224, 98%, 58%);
    text-decoration: none;
    border: 1px solid blue;
    border-radius: 5px;
    padding:3px;
 }
-.element-content a:visited {
+.btn:visited {
    color: hsl(224, 98%, 58%)
 }
-.element-content a:hover {
+.btn:hover {
    background-color: hsl(224, 98%, 58%);
    color:white;
 }
@@ -519,3 +519,26 @@ ul {
       width: 100%;
    }
 }
+@media (prefers-color-scheme: dark) {
+   html {
+     background: rgb(102, 102, 102);
+     color: rgb(150, 145, 140);
+     /* outline: 5px dashed #000; */
+   }
+
+   #sidebar {
+      background-color: #464646;
+      color: rgb(190, 190, 190);
+   }
+   .btn {
+      color: #d3cfcf;
+      background-color: #464646;
+      border-color: #121212;
+   }
+   .btn:visited{
+      color:#d3cfcf
+   }
+   .btn:hover{
+      color:#000000
+   }
+ }
