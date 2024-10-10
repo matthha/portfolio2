@@ -1,50 +1,20 @@
-# React + TypeScript + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This site is version 2.0 and improves on the previous one by adding case studies and light and dark modes.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### About Me
+I'm a web developer that likes to focus on interaction design. I enjoy working on teams and have led a few myself. I've learned the best way to make a good product is to talk to your users and empathize with them throughout the design and development process.
 
-## Expanding the ESLint configuration
+### Mirror Match
+Designed in school, we made a prototype for a mirror that you can interact with as a smart device.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### CCHS Orientation App
+A high school needed an app for families to do orientation online. The staff needed easy ways to administer and track the course. Used AWS for hosting and RDS.
 
-- Configure the top-level `parserOptions` property like this:
+### DigiArcade
+In my mobile dev class, our group made an app for asynchronous games. There were three different games that you could play in one app with random opponents. 
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Team Leagues
+Made for my local volleyball league, I made an app that could be used by any coach to make teams of various sizes. Shuffle feature allowed them to auto sort players to create equally ranked teams.
