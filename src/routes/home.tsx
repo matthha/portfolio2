@@ -1,7 +1,11 @@
 import mirror from "../images/Mirror Match Info.png"
+import mirrord from "../images/Mirror Match InfoDark.png"
 import cchs from "../images/CCHSInfo.png"
+import cchsd from "../images/CCHSInfoDark.png"
 import digi from "../images/DigiArcadeInfo.png"
+import digid from "../images/DigiArcadeInfoDark.png"
 import vball from "../images/VBallInfo.png"
+import vballd from "../images/VBallInfoDark.png"
 
 
 
@@ -19,7 +23,9 @@ export default function Home() {
             <p>A design prototype for people who want a little more help getting ready.</p>
             {/* <Button href='https://matthha.github.io/gov-property-taxes/' target='blank'>Site</Button> */}
             <div><a type="button" className="btn" href='https://verdant-cell-8ec.notion.site/Mirror-Match-70a30d36bb254905935f71cfe1b112ac' target='blank'>Article</a></div>
-            <img src={mirror} alt="..." width="800" height="auto" />
+            <img className="--light" src={mirror} alt="..." width="800" height="auto" />
+            <img className="--dark" src={mirrord} alt="..." width="800" height="auto" />
+
          </div>
 
          <div className='element-content tile3'>
@@ -30,14 +36,16 @@ export default function Home() {
                <a type="button" className="btn btn-outline-primary btn-sm" href='https://github.com/matthha/react-amp' target='blank'>GitHub</a>
             </div>
 
-            <img src={cchs} alt="..." width="800" height="auto" />
+            <img className="--light" src={cchs} alt="..." width="800" height="auto" />
+            <img className="--dark" src={cchsd} alt="..." width="800" height="auto" />
          </div>
 
          <div className='element-content tile4'>
             <h2>DigiArcade</h2>
             <p>A cross platform gaming app for people who don't always have time to finish games.</p>
             <div><a type="button" className="btn btn-outline-primary btn-sm" href='https://github.com/SI669-classroom/si-669-final-project-teamarc' target='blank'>GitHub</a></div>
-            <img src={digi} alt="..." width="800" height="auto" />
+            <img className="--light" src={digi} alt="..." width="800" height="auto" />
+            <img className="--dark" src={digid} alt="..." width="800" height="auto" />
          </div>
 
          <div className='element-content tile5'>
@@ -47,7 +55,8 @@ export default function Home() {
                <a type="button" className="btn btn-outline-primary btn-sm" href='https://matthha.github.io/vball/' target='blank'>Site</a>{' '}
                <a type="button" className="btn btn-outline-primary btn-sm" href='https://github.com/matthha/vball' target='blank'>GitHub</a>
             </div>
-            <img src={vball} alt="..." width="800" height="auto" />
+            <img className="--light" src={vball} alt="..." width="800" height="auto" />
+            <img className="--dark" src={vballd} alt="..." width="800" height="auto" />
          </div>
       </div>
    )
