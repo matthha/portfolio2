@@ -20,6 +20,7 @@ import Home from './routes/home.js';
 import Mirror from './routes/mirror.js';
 import League from './routes/league.js';
 import Digi from './routes/digi.js';
+import About from './routes/about.js';
 
 // const router1 = createHashRouter([
 //   {
@@ -82,6 +83,10 @@ const router = createHashRouter([
           {
             path: "/digi",
             element: <Digi />,
+          },
+          {
+            path: "/about",
+            element: <About />,
           },
         ]
     }
