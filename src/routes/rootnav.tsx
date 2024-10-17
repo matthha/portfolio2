@@ -1,11 +1,18 @@
 // @ts-nocheck
-import { Link, Outlet, useLoaderData, Form, redirect, NavLink, useNavigation, useSubmit } from "react-router-dom";
+import { Link, Outlet, useLoaderData, Form, redirect, NavLink, useNavigation, useSubmit, useLocation } from "react-router-dom";
 // import { getContacts, createContact } from "../contacts";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 export default function RootNav() {
-   const navigation = useNavigation();
+
    const links = [['Home', '/'],['Mirror','/mirror'],['CCHS', '/cchs'],['Digi','/digi'],['League','/league'],['About','/about']]
+
+   const { pathname } = useLocation();
+   const scrollElm = document.getElementById('outlet');
+   useEffect(() => {
+    scrollElm.scrollTop = 0;
+   }, [pathname]);
+
    return (
       <>
          <div id="sidebar">
@@ -37,7 +44,7 @@ export default function RootNav() {
             </nav>
          </div>
          {/* End Nav - Start */}
-         <div className="outlet">
+         <div id='outlet' className="outlet">
             <Outlet />
          </div>
       </>

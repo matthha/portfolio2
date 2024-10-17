@@ -5,6 +5,8 @@ import {
   createHashRouter,
   createBrowserRouter,
   RouterProvider,
+  ScrollRestoration,
+  Outlet,
 } from "react-router-dom";
 // import App from './App.tsx'
 import Root, { loader as rootLoader, action as rootAction } from './routes/root.tsx';
@@ -21,6 +23,7 @@ import Mirror from './routes/mirror.js';
 import League from './routes/league.js';
 import Digi from './routes/digi.js';
 import About from './routes/about.js';
+import ScrollToTop from './scroll-to-top.js';
 
 // const router1 = createHashRouter([
 //   {
@@ -89,13 +92,12 @@ const router = createHashRouter([
             element: <About />,
           },
         ]
-    }
-    ]
-  },
+    }]
+}
 ]);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-     <RouterProvider router={router} />
+     <RouterProvider router={router} ></RouterProvider>
   </StrictMode>,
 )
