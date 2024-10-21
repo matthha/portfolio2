@@ -15,6 +15,10 @@ html {
        background-color: #e3e3e3;
    }
 }
+p {
+   margin-bottom: 10px;
+   margin-top: 0px;
+}
 
 body {
    font-family:"Oswald", 'Segoe UI','Fira Sans', Arial, Tahoma, sans-serif;
@@ -51,7 +55,11 @@ body {
    max-width: 800px;
    align-items: center;
    padding-bottom: 4em;
+   margin-left: 8px;
 
+}
+.element-content * {
+   width: 100%;
 }
 .element-content h3 {
    width: 100%;
@@ -62,7 +70,7 @@ body {
 .element-content h2 {
    width: 100%;
    margin-bottom: 0px;
-   align-self: flex-start;
+   /* align-self: flex-start; */
    /* border-top: 1px solid gray; */
 }
 .element-content > img {
