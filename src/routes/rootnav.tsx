@@ -8,8 +8,9 @@ export default function RootNav() {
    const links = [['Home', '/'],['Mirror','/mirror'],['CCHS', '/cchs'],['Digi','/digi'],['League','/league'],['About','/about']]
 
    const { pathname } = useLocation();
-   const scrollElm = document.getElementById('outlet');
+   
    useEffect(() => {
+   const scrollElm = document.getElementById('outlet');
     scrollElm.scrollTop = 0;
    }, [pathname]);
 

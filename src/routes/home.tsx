@@ -6,6 +6,7 @@ import digi from "../images/DigiArcadeInfo.png"
 import digid from "../images/DigiArcadeInfoDark.png"
 import vball from "../images/VBallInfo.png"
 import vballd from "../images/VBallInfoDark.png"
+import p2 from "../images/p2.jpg"
 import { Link } from "react-router-dom"
 
 
@@ -13,18 +14,21 @@ import { Link } from "react-router-dom"
 export default function Home() {
 
    return (
-      <div className='element-content tile1'>
+      <div className='doc-content'>
+
          {/* <div className="element-content">
             <h2>Welcome!</h2>
             <p>Below is an overview of some of my projects. Visit the pages for more information.</p>
          </div> */}
+
+         {/* <img className='prof-pic' src={p2}></img> */}
          
          <div className='element-content tile1'>
+         <div className='prof-pic' id='prof' style={{height:'250px',width:'250px',borderRadius:'50%',backgroundImage:`url(${p2})`,backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
             <Link to='/about' className="link-header tooltip">
                <h2 id='aboutMe'>About Me <span className="tooltiptext">Learn More</span></h2>
             </Link>
-            <h4>Formally trained agile UX professional, I've refined my skills as a liaison to bridge the divide between problems and solutions.</h4>
-            <p>Welcome! I'm a web developer that likes to focus on interaction design. I enjoy working on teams and have led a few myself. I've learned the best way to make a good product is to talk to your users and empathize with them throughout the design and development process.</p>
+            <p>Welcome! I'm a web developer that likes to focus on interaction design. I tackle problems head on with open arms. Solutions that last are found when you understand their context. I've learned the best way to make a good product is to talk to your users and empathize with them throughout the design and development process. I enjoy working on teams and have led a few myself.</p>
          </div>
          
          <div className='element-content tile2' id='mirrorMatch'>

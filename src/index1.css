@@ -69,13 +69,14 @@ body {
    max-width: 100%;
 }
 .element-content * {
-   width: 100%;
+   max-width: 100%;
 }
 .tooltip {
    position: relative;
    display: inline-block;
    /* border-bottom: 1px dotted black; */
 }
+
 .tooltiptext{
    font-size: small;
    font-weight: 300;
@@ -96,7 +97,7 @@ body {
    
    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
    opacity: 0;
-   transition: opacity ease-in 1s ;
+   transition: opacity ease-in 0.4s ;
  }
  .tooltip .tooltiptext::after {
    content: " ";
@@ -275,7 +276,10 @@ ul {
    list-style-type: disc;
    list-style-position: inside;
 }
-
+.doc-content {
+   display: grid;
+   justify-content: center;
+}
 @media only screen and (min-width: 800px) {
    body {
       font-family:"Oswald",'Segoe UI','Fira Sans', Arial, Tahoma, sans-serif;
