@@ -4,7 +4,7 @@ export default function CCHS() {
       <div className="element-content tile1">
          <h1>CCHS</h1>
          <div>
-               <a type="button" className="btn btn-outline-primary btn-sm" href='https://si-699-school.webflow.io/' target='blank'>Article</a>{'  '}
+               <a type="button" className="btn btn-outline-primary btn-sm" href='https://si-699-school.webflow.io/' target='blank'>Full Article</a>{'  '}
                <a type="button" className="btn btn-outline-primary btn-sm" href='https://github.com/matthha/react-amp' target='blank'>GitHub</a>
             </div>
          <h2>Case Study: Dynamic Course Content Management App for City Charter High School</h2>
