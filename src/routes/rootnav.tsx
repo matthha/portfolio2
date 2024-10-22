@@ -11,7 +11,10 @@ export default function RootNav() {
    
    useEffect(() => {
    const scrollElm = document.getElementById('outlet');
+   const scrollPg = document.getElementsByClassName('element-content')[0];
+   console.log(scrollPg)
     scrollElm.scrollTop = 0;
+    scrollPg.scrollTop = 0
    }, [pathname]);
 
    return (

@@ -48,7 +48,12 @@ body {
    text-decoration: none;
 }
 
-
+#root {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+}
 .element-content{
    display: flex;
    flex-direction: column;
@@ -345,6 +350,7 @@ ul {
 
    #root {
       display: flex;
+      flex-direction: row;
       height: 100%;
       width: 100%;
    }

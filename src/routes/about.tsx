@@ -28,10 +28,6 @@ export default function About() {
          <p>Quantum, Scale, Claws, Freddy and Frederika</p>
 
          <h2>Videogames</h2>
-         <p>The Talos Principle</p>
-         <p>Dark Cloud</p>
-
-
-
+         <p>The Talos Principle, Dark Cloud</p>
       </div>
    )}
