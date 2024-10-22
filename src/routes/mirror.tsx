@@ -3,7 +3,9 @@ export default function Mirror() {
    return (
    <div className="element-content">
       <h1>Mirror Match</h1>
+      <div><a type="button" className="btn" href='https://verdant-cell-8ec.notion.site/Mirror-Match-70a30d36bb254905935f71cfe1b112ac' target='blank'>Article</a></div>
       <h2>Case Study: IoT System for Enhancing Morning Routines</h2>
+      
       <h3>Goal:</h3>
       <p>Design and prototype an Internet of Things (IoT) system tailored for 20-30-year-olds to enhance their home environment. Our focus was on creating a system that could be implemented in the near future and would appeal to tech-savvy young adults who are more likely to embrace new technology.
       </p>

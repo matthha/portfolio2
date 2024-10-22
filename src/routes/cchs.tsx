@@ -3,6 +3,10 @@ export default function CCHS() {
    return (
       <div className="element-content tile1">
          <h1>CCHS</h1>
+         <div>
+               <a type="button" className="btn btn-outline-primary btn-sm" href='https://si-699-school.webflow.io/' target='blank'>Article</a>{'  '}
+               <a type="button" className="btn btn-outline-primary btn-sm" href='https://github.com/matthha/react-amp' target='blank'>GitHub</a>
+            </div>
          <h2>Case Study: Dynamic Course Content Management App for City Charter High School</h2>
          <h3>Goal:</h3>
          <p>Develop an application for City Charter High School that allows administrators to easily update course content as it changes, ensuring that students and parents have access to the latest information.</p>

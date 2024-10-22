@@ -3,6 +3,10 @@ export default function League() {
    return (
    <div className="element-content">
       <h1>League Teams</h1>
+      <div>
+               <a type="button" className="btn btn-outline-primary btn-sm" href='https://matthha.github.io/vball/' target='blank'>Site</a>{' '}
+               <a type="button" className="btn btn-outline-primary btn-sm" href='https://github.com/matthha/vball' target='blank'>GitHub</a>
+            </div>
       <h2>Case Study: Team Management App for Coaches</h2>
       <h3>Goal:</h3>
       <p>Develop an application that is easy to use on mobile devices to add and edit players and teams.</p>

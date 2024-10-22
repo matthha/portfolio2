@@ -3,6 +3,7 @@ export default function Digi() {
    return (
    <div className="element-content">
       <h1>DigiArcade</h1>
+      <div><a type="button" className="btn btn-outline-primary btn-sm" href='https://github.com/SI669-classroom/si-669-final-project-teamarc' target='blank'>GitHub</a></div>
       <h2>Case Study: Cross-Platform Mobile Gaming App</h2>
       <h3>Goal:</h3>
       <p>Our objective was to develop a cross-platform mobile application that enables users to play games at their own pace. To achieve this, we utilized React Native for building the mobile app and Google Firebase for backend services, ensuring a seamless experience across different devices.
